@@ -1,0 +1,17 @@
+redis-cli 
+
+
+#Listing All Databases With Entries
+$$ INFO
+
+#Listing All Databases
+$$ CONFIG GET databases
+
+#connect to redis with redis-cli
+$$ redis-cli -h 10.0.190.100 -p 6379 
+
+# authenticate to redis
+$$AUTH password    or   $$AUTH username password
+
+#query master mymaster from sentinel
+$$sentinal mymaster   or  $$SENTINEL get-master-addr-by-name mymaster
